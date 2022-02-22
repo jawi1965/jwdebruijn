@@ -22,7 +22,9 @@ h3, h3 a {@apply font-headings text-slate-800 text-xl tracking-tight;}
 h2 {@apply my-4;}
 .menu a {@apply font-copy font-medium text-xs uppercase}
 
+/* Articles */
 
+.article-list-item p {@apply m-0;}
 
 .text-focus-in {
 	-webkit-animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;

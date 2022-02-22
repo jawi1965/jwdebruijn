@@ -32,6 +32,14 @@ github_username:  jekyll
 plugins:
   - jekyll-postcss
 
+defaults:
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+
 # Build settings
 # theme: minima
 # plugins:
