@@ -4,17 +4,23 @@ title: Blog
 ---
 
 <div class="article-list mt-32 h-screen max-w-prose mx-auto">
+    
+    <h1 class="text-2xl">Artikelen</h1>
 
+    <div class='article-list'>
+        {% for post in site.posts %}
+           
+            <a href="{{post.url}}">
+                <div class='article-list-item mt-4 px-8 py-6 rounded-lg bg-slate-50 shadow-2xl'>
+                    <h2 class='m-0'>{{post.title}}</h2>
+                    {{post.excerpt}}
+                </div>    
+            </a>
+            
+        {% endfor %} 
+    </div>
 
-<h1 class="text-2xl">Artikelen</h1>
-
-<ul>
-  {% for post in site.posts %}
-    <li class='article-list-item mt-8'>
-      <h2 class='font-copy font-bold text-xl m-0'><a href="{{ post.url }}">{{ post.title }}</a></h2>
-      {{post.excerpt}}
+<div>
+  
    
-    </li>
-  {% endfor %}
-</ul>
-</div>
+

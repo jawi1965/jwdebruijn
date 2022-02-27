@@ -42,8 +42,15 @@ defaults:
 
 # Build settings
 # theme: minima
-# plugins:
-#   - jekyll-feed
+plugins:
+  - jekyll-feed
+
+exclude:
+  - tailwind.config.js
+  - postcss.config.js
+  - package.json
+  - package-lock.json
+  - notes.txt
 
 # Exclude from processing.
 # The following items will not be processed, by default.
