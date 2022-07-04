@@ -1,8 +1,10 @@
-- name: Home
+- name: home
   link: /
 - name: about
-  link: /#about
+  link: /about.html
 - name: samenwerken
-  link: /#samen-werken
+  link: /samenwerken.html
 - name: contact
-  link: /#contact
+  link: /contact.html
+#- name: blog
+#  link: /blog.html

@@ -9,7 +9,7 @@ module.exports = {
     extend: {
         fontFamily :{       
             'mono' : ['"Roboto Mono"'],
-            'headings': ['Merriwaether'],
+            'headings': ['Merriweather'],
             'copy': ['Lato'],
         },
     },

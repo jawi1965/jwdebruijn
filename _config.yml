@@ -39,18 +39,25 @@ defaults:
       type: "posts"
     values:
       layout: "post"
+ 
 
 # Build settings
 # theme: minima
 plugins:
   - jekyll-feed
+#  - jekyll-spaceship
 
 exclude:
-  - tailwind.config.js
-  - postcss.config.js
-  - package.json
-  - package-lock.json
+  - _drafts/.Ulysses-Group.plist
+  - _drafts/.Ulysses-Settings.plist
   - notes.txt
+
+# exclude:
+#   - tailwind.config.js
+#   - postcss.config.js
+#   - package.json
+#   - package-lock.json
+#   - notes.txt
 
 # Exclude from processing.
 # The following items will not be processed, by default.
