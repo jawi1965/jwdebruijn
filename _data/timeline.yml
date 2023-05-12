@@ -1,0 +1,11 @@
+- date: 2000
+  company: AMEV verzekeringen
+  title: Procesmanager ICT
+  description: Opzetten en vastleggen processen en ICT-toepassingen voor een nieuwe (marketing) afdeling gericht op personal financial planning.
+  tools: BPMN, UML, project management
+  projects-results:
+  - nsme: Ontwikkelen en implementeren processen.
+    result: Processen gedocumenteerd
+  - name: Ontwikkelken rekenmodules, front-office toepassingen voor ondersteuning Financial Planning gedocumenteerd
+    result: Requirements en specificaties gedocumenteerd
+

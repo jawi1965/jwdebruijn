@@ -10,8 +10,8 @@
 
 body {@apply font-copy ;}
 
-p {@apply mt-2 text-lg; }
-p:last-child {@apply mb-6;}
+p {@apply text-lg mt-2; }
+
 
 .content-link {@apply underline underline-offset-2 decoration-sky-400 decoration-2;}
 
@@ -46,7 +46,7 @@ FOO bar
 /* ====================
  Posts 
  ====================== */
-
+.article p:last-child {@apply mb-6;}
 .article-list-item p {@apply m-0;}
 
 .article-title h1 {@apply text-slate-700;}
@@ -61,6 +61,10 @@ ul li {@apply list-disc px-2 my-1}
 
 
 blockquote { @apply text-xl font-light italic my-4 py-4 pl-4 border-l-4 border-orange-400;  }
+
+/*-------------------------
+Timeline
+--------------------------*/
 
 
 

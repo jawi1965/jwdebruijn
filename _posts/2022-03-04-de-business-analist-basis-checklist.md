@@ -2,6 +2,7 @@
 title: De universele checklist voor business analisten
 date: 2022-03-04
 tag: ba-toolbox
+metadescription: Elk nieuw project is een unieke, tijdelijke, onderneming.De projecten voor bedrijfsproces management
 
 ---
 

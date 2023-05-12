@@ -3,6 +3,7 @@ title: Ontwerp je een product of een dienst?
 date: 2022-03-02
 image: productdienst.png
 tags: service-design
+netadescription: Traditioneel is het onderscheid tussen een product of dienst relatief duidelijk.
 ---
 
 Traditioneel is het onderscheid tussen een product of dienst relatief duidelijk.
