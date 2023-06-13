@@ -2,35 +2,104 @@
 layout: base
 title: jwdebruijn - Freelance Business Analist
 ---
+<!--
+  <div class=" my-20 bg-slate-100">
+  <blockquote class="p-8 text-center">
+        <h2 class="md:text-4xl text-xl font-semibold text-dark-blue">
+            The future of coding is no coding at all 
+        </h2>
+        <cite>(2013) GitHub-CEO - Chris Wanstrath  </cite>
+    </blockquote>
+  </div>
+-->  
 
+    {% for post in site.posts limit:1  %}
+   
+    
+   
+    <div class="featured mt-0  md:flex md:items-center md:justify-center bg-sky-100">
+        <div class="p-8 md:w-1/3 bg-sky-100 ">
+            <img src="{{post.image}}" alt=""> 
+        </div>
+        <div class="md:w-2/3 p-8">
+            <a href="{{post.url}}">
+            <div>
+               {% if post.category == "IA" %}
+                 <p class="subtitle font-light uppercase">{{post.subtitle}}</p>
+                <h2 class="text-2xl md:text-4xl hover:underline ">{{post.title}}</h2>
+
+               {% else %}
+                <h2 class="hover:underline ">{{post.title}}</h2>
+                  <p class="subtitle font-light uppercase">{{post.subtitle}}</p>
+               {% endif %}
+               
+                 
+                <p class=>{{post.excerpt}}</p>
+                <ul class="flex mt-8">
+                    {% for tag in post.tags  %}
+                    <li class="tag">
+                        <i class="fa fa-tag text-o"></i> {{tag}}
+                    </li>
+                    {% endfor %}
+                 </ul>
+            </div>
+            </a>
+        </div>
+     </div>
+      
+       
+    {% endfor %}
+ 
+<div class="pt-32 pb-4">
+    <h2 class="section-title">Recente artikelen</h2>
+  </div>
+  <div class="recent-articles md:flex">
+    {% for post in site.posts limit:3 offset:1  %}
+        <a href="{{post.url}}" class="w-1/3 ">
+            <div class="article-card flex justify-center bg-slate-100  h-auto md:flex-col md:h-96 shadow-md rounded-md mt-4 mx-4 p-4">
+               <div class="post-icon p-4">
+                 <p class=" text-center text-white"><i class="{{post.icon}} text-4xl bg-sky-500 p-4 rounded-lg"></i></p>
+               </div>
+                <div class="article-card-content">
+                    <h3 class="text-lg font-bold pt-4">{{post.title}}</h3>
+                <p>{{post.excerpt}}</p>
+                <ul class="flex items-center pt-4">
+                    <!--<i class="fa fa-tags mr-2"></i>-->
+                    {% for tag in post.tags  %}
+                    <li class="tag">
+                        {{tag}}
+                    </li>
+                    {% endfor %}
+                    
+                </ul>
+                </div>
+                
+            </div>
+        </a>
+    {% endfor %}
+    </div>
+
+    <div class="mt-20 mb-4 flex justify-center items-center">
+        <h2 class=" section-title font-light uppercase m-0">Interresant </h2>
+        <i class="fa fa-external-link text-xl text-dark-blue ml-2"></i>
+    </div>
+    
+    <div class="linklist  bg-sky-100 py-16 ">
+        {% for link in site.data.links  %}
+            <div class="md:max-w-prose md:mx-auto p-4 my-2 mx-2 border border-slate-500 bg-slate-100 hover:bg-slate-200">
+                <a href="{{link.url}}">
+                <h3 class="font-medium">{{link.title}}</h3>
+                <p class="text-sm font-medium">{{link.description}}</p>
+                </a>
+            </div>
+        
+        {% endfor %}
+    </div>
 
 
     
-    <div id="intro" class=" md:flex md:justify-between  md:items-center md:columns-2 md:gap-8 ">
-        <div class="min-h-screen md:max-w-prose md:mx-auto  flex flex-col place-content-center px-4 py-2 md:px-8 md:py-6">
-            <div class='py-20'>
-            <h1 class='font-headings text-2xl text-slate-600'>Jan Willem (JW) de Bruijn</h1>
-            <h2 class='text-lg font-copy'>Freelance <br /> 
-            <span class="underline underline-offset-4 decoration-sky-200 decoration-4">Business Analist</span> <span class="underline underline-offset-4 decoration-sky-200 decoration-4"> | Low Code No Code enthusiast</span></h2>
-            <p class='font-copy'>
-          Business Analist / IT Consultant met ruime ervaring op het snijvlak van business en ICT. <br /> <!--Analytisch sterk, conceptueel denker, pragmatische teamspeler.-->
-             </p>
-             <p class='font-copy'>
-           In de afgelopen jaren steeds enthousiaster geworden over het ontwikkelen van toepassingen op basis van no-code | low-code technologie en platformen.    
-             </p>
-           </div>
-
-           <div class='flex items-center mx-auto text-sm text-slate-700'>
-                <div class=''>
-
-                
-                {% for i in site.data.nav  %}
-                    <a href="{{ i.link }}" class="text-focus-in-delay mx-3  {% if i.link == page.url or i.name == 'blog' %} hidden {%endif%} font-light">{{ i.name }}</a>
-                {% endfor %}</p>
-                </div>            
-            </div>
-        </div>
-    </div>   
+    
+       
   
         
         

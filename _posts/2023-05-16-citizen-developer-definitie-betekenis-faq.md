@@ -1,4 +1,12 @@
-# Citizen developer, definitie, betekenis en FAQ’
+---
+title: Citizen developer vragen en antwoorden
+date: 2023-05-16
+published: true
+tags: no-code low-code
+icon: fa fa-laptop
+metadescription: Citizen developer, waar zitten ze in jouw organisatie?
+---
+Citizen developer, waar zitten ze in jouw organisatie?
 
 Een van de problemen met de huidige arbeidsmarkt is dat er onvoldoende mensen zijn. voor de beschikbare banen. 
 

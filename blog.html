@@ -3,17 +3,17 @@ layout: base
 title: Blog
 ---
 
-<div class=" mt-32 min-h-screen max-w-prose mx-auto">
+<div class=" mt-6 min-h-screen max-w-prose mx-auto">
     
-    <h1 class="text-2xl">Artikelen</h1>
-
+    <h2 class="section-title font-light uppercase border-b-2 border-sky-300">Artikelen</h2>
+   
     <div class='article-list'>
     
         {% for post in site.posts %}
            
             <a href="{{post.url}}">
-                <div class='article-list-item mt-4 px-8 py-6 rounded-lg bg-slate-50 drop-shadow-xl hover:drop-shadow-2xl'>
-                    <h2 class='m-0'>{{post.title}}</h2>
+                <div class='article-list-item mt-4 px-8 py-6 rounded-lg bg-slate-50 hover:shadow-xl hover:bg-slate-100'>
+                    <h2 class='text-xl font-bold font-headings m-0'>{{post.title}}</h2>
                     {{post.excerpt}}
                 </div>    
             </a>

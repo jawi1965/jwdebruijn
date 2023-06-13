@@ -1,20 +1,27 @@
 ---
 layout: base
 ---
-<div class=' mt-32 mb-32 max-w-prose mx-auto min-h-screen '>
+<div class=' mx-auto py-6 max-w-prose'>
     
 
 
-    <div class='article'>
+    <div class='article p-4'>
         <div class='article-title font-headings'>
             <h1 class='text-2xl md:text-4xl'>{{ page.title }}</h1>
         </div>
         <div class='article-meta'>
             <p class=' text-sm text-slate-400'>
-                {{ page.date | date: '%d-%m-%Y'}} - <span class='px-4 py-2 rounded-full bg-slate-200'>{{page.tags}}</span>
+                {{ page.date | date: '%d-%m-%Y'}} - 
+                {% for tag in page.tags %}
+                <span class='px-4 py-2 rounded-full bg-slate-200'>{{tag}}</span>
+                {%endfor%}
             </p>    
         </div>
-        <div class='article-body'>
+        <div class="bg-blue-100 m-4">
+            <img class="mx-auto" src="{{page.image}}" alt="">
+        </div>
+        <div class='article-body mt-8'>
+            <p class="subtitle">{{ page.subtitle }}</p>
             {{ content }}        
         </div>    
     </div>

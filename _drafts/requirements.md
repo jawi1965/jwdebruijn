@@ -5,7 +5,7 @@ date: 2022-04-18
 
 Requirements, verzamelen, verwerken en managen is moeilijk, zoals het bouwen van software moeilijk is. 
 
-Requirements, in feite eisen die je stelt aan een te ontwerpen oplossing, stel je niet zomaar op. Ze worden gebaseerd op kansen en problemen en kansen die op strategisch niveau in een organisatie worden geïdentificeerd. In jargon _Business Needs_
+Requirements, in feite eisen die je stelt aan een te ontwerpen oplossing, stel je niet zomaar op. Ze worden gebaseerd  problemen en kansen die op strategisch niveau in een organisatie worden geïdentificeerd. In jargon _Business Needs_
 
 ### Een lijst met ‘zallen’
 ‘A list of shalls’ zou het in het Engels kunnen zijn. Je bent de formulering het misschien wel eens tegen gekomen:

@@ -2,8 +2,8 @@
 title: De universele checklist voor business analisten
 date: 2022-03-04
 tag: ba-toolbox
-metadescription: Elk nieuw project is een unieke, tijdelijke, onderneming.De projecten voor bedrijfsproces management
-
+metadescription: Elk nieuw project is een unieke, tijdelijke, onderneming.
+icon: fa fa-check-circle-o
 ---
 
 Elk nieuw project is een unieke, tijdelijke, onderneming.
@@ -68,7 +68,7 @@ Probeer het zelf. Denk even terug aan een project waar je aan gewerkt hebt en pr
 	- Enquete’s
 - Welke competenties kan ik inzetten?
 	- Op basis van de stakeholders en hun relaties, de (elicitatie)technieken die ik kan gebruiken en mijn eigen ervaring, welke technieken kan ik dan het beste inzetten om de benodigde business analyse informatie te verzamelen en valideren.
-								 
+										 
 ### Organisatorische middelen
 
 - Welke gespecialiseerde tools, voor elicitatie, modelleren, documentatie etc., heb ik tot mijn beschikking
